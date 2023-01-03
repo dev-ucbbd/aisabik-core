@@ -10,7 +10,7 @@
 
 # Mycroft
 
-Mycroft is a hackable open source voice assistant.
+A.I.SABIK is a hackable open source voice assistant.
 
 ## Table of Contents
 
