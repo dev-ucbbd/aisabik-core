@@ -187,7 +187,7 @@
       same "printed page" as the copyright notice for easier
       identification within third-party archives.
 
-   Copyright [yyyy] [name of copyright owner]
+   Copyright [2021-2023] [Kazi Saabique Ahmed]
 
    Licensed under the Apache License, Version 2.0 (the "License");
    you may not use this file except in compliance with the License.
@@ -203,7 +203,7 @@
    
 =======================================================================
 
-Component licenses for mycroft-core:
+Component licenses for aisabik-core:
 
 The mycroft-core software references various Python Packages (via PIP),
 each of which has a separate license.  All are compatible with the
