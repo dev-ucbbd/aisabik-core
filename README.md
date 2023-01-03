@@ -8,21 +8,21 @@
 [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg)](http://makeapullrequest.com)
 [![Join chat](https://img.shields.io/badge/Mattermost-join_chat-brightgreen.svg)](https://chat.mycroft.ai)
 
-# Mycroft
+# Sabik
 
-Mycroft is a hackable open source voice assistant.
+A.I.Sabik is a hackable open source voice assistant.
 
 ## Table of Contents
 
 - [Getting Started](#getting-started)
-- [Running Mycroft](#running-mycroft)
-- [Using Mycroft](#using-mycroft)
+- [Running Sabik](#running-mycroft)
+- [Using Sabik](#using-mycroft)
   * [*Home* Device and Account Manager](#home-device-and-account-manager)
   * [Skills](#skills)
 - [Behind the scenes](#behind-the-scenes)
   * [Pairing Information](#pairing-information)
   * [Configuration](#configuration)
-  * [Using Mycroft Without Home](#using-mycroft-without-home)
+  * [Using Sabik Without Home](#using-mycroft-without-home)
   * [API Key Services](#api-key-services)
   * [Using Mycroft behind a proxy](#using-mycroft-behind-a-proxy)
     + [Using Mycroft behind a proxy without authentication](#using-mycroft-behind-a-proxy-without-authentication)
@@ -34,7 +34,7 @@ Mycroft is a hackable open source voice assistant.
 
 First, get the code on your system!  The simplest method is via git ([git installation instructions](https://gist.github.com/derhuerst/1b15ff4652a867391f03)):
 - `cd ~/`
-- `git clone https://github.com/MycroftAI/mycroft-core.git`
+- `git clone https://github.com/SabikAI/aisabik-core.git`
 - `cd mycroft-core`
 - `bash dev_setup.sh`
 
@@ -45,23 +45,23 @@ This script sets up dependencies and a [virtualenv][about-virtualenv].  If runni
 
 NOTE: The default branch for this repository is 'dev', which should be considered a work-in-progress. If you want to clone a more stable version, switch over to the 'master' branch.
 
-## Running Mycroft
+## Running Sabik
 
-Mycroft provides `start-mycroft.sh` to perform common tasks. This script uses a virtualenv created by `dev_setup.sh`.  Assuming you installed mycroft-core in your home directory run:
-- `cd ~/mycroft-core`
+Mycroft provides `start-mycroft.sh` to perform common tasks. This script uses a virtualenv created by `dev_setup.sh`.  Assuming you installed aisabik-core in your home directory run:
+- `cd ~/aisabik-core`
 - `./start-mycroft.sh debug`
 
 The "debug" command will start the background services (microphone listener, skill, messagebus, and audio subsystems) as well as bringing up a text-based Command Line Interface (CLI) you can use to interact with Mycroft and see the contents of the various logs. Alternatively you can run `./start-mycroft.sh all` to begin the services without the command line interface.  Later you can bring up the CLI using `./start-mycroft.sh cli`.
 
 The background services can be stopped as a group with:
-- `./stop-mycroft.sh`
+- `./stop-aisabik.sh`
 
 ## Using Mycroft
 
 ### *Home* Device and Account Manager
-Mycroft AI, Inc. maintains a device and account management system known as Mycroft Home. Developers may sign up at: https://home.mycroft.ai
+Sabik AI, Inc. maintains a device and account management system known as Sabik Home. Developers may sign up at: https://home.mycroft.ai
 
-By default, mycroft-core  is configured to use Home. By saying "Hey Mycroft, pair my device" (or any other request verbal request) you will be informed that your device needs to be paired. Mycroft will speak a 6-digit code which you can enter into the pairing page within the [Mycroft Home site](https://home.mycroft.ai).
+By default, mycroft-core  is configured to use Home. By saying "Hey Sabik, pair my device" (or any other request verbal request) you will be informed that your device needs to be paired. Mycroft will speak a 6-digit code which you can enter into the pairing page within the [Mycroft Home site](https://home.mycroft.ai).
 
 Once paired, your unit will use Mycroft API keys for services such as Speech-to-Text (STT), weather and various other skills.
 
